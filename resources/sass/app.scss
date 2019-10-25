@@ -1,1 +1,7 @@
-//
+//reset.cssやmixinを読み込む
+@import "config/reset";
+@import "mixin/favSetting";
+@import "mixin/fix";
+@import "mixin/responsive";
+
+@import "index";

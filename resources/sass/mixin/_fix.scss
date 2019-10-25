@@ -1,0 +1,41 @@
+// フォームやbuttonにはじめから適応されているCSSを打ち消す
+@mixin reset_form {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+}
+
+// AタグのデフォルトのCSSを打ち消す
+@mixin reset_a-tag($color: $white){
+  &:link{
+    color: $color;
+  }
+  &:visited{
+    color: $color;
+  }
+  text-decoration: none;
+}
+
+// floatの仕様を打ち消す
+@mixin clearFix {
+  &:after{
+    content: "";
+    clear: both;
+    display: inline-block;
+  }
+}
+
+//スクロールバーを非表示にする
+@mixin hiddenScrollBar{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+}
