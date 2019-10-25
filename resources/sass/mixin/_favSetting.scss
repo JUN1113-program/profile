@@ -5,3 +5,10 @@
   text-align: $align;
 }
 
+// 文字の色、サイズ、太さを決定する
+@mixin font_data($color: black, $size: 15px, $weight: normal) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+
