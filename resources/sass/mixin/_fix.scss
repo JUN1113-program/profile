@@ -23,6 +23,15 @@
   text-decoration: none;
 }
 
+// floatの仕様を打ち消す
+@mixin clearFix {
+  &:after{
+    content: "";
+    clear: both;
+    display: inline-block;
+  }
+}
+
 //スクロールバーを非表示にする
 @mixin hiddenScrollBar{
   &::-webkit-scrollbar {
