@@ -1,0 +1,7 @@
+// 高さを設定しテキストの中央寄せを行う
+@mixin text_center($height: auto,$align: unset){
+  height: $height;
+  line-height: $height;
+  text-align: $align;
+}
+
