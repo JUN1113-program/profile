@@ -16,4 +16,11 @@ class ContactController extends Controller
         return view("contact/create");
     }
 
+    public function store(Request $request){
+        $contact = ["content" => $request->content,
+                    "email" => $request->email];
+        Contact::create($contact);
+        return redirect("/");
+    }
+
 }
