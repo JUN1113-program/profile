@@ -12,4 +12,8 @@ class ContactController extends Controller
         return view("contact/index");
     }
 
+    public function create(){
+        return view("contact/create");
+    }
+
 }
