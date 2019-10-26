@@ -188,3 +188,27 @@ body {
   color: gray;
 }
 
+.portfolios {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+}
+
+.portfolios__content {
+  height: 100vh;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.portfolios__content__top {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolios__content__image {
+  width: 60vw;
+}
+
