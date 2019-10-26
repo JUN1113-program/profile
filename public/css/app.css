@@ -212,3 +212,23 @@ body {
   width: 60vw;
 }
 
+.profile__content {
+  height: 100vh;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.profile__content__top {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile__content__image {
+  width: 60vw;
+}
+
+.profile .icon {
+  width: 200px;
+}
+
