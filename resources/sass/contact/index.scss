@@ -1,0 +1,15 @@
+.contactIndex{
+  width: 20%;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  & a{
+    padding-top: 10px;
+    @include reset_a-tag(gray);
+    &:hover{
+      border-bottom: 1px solid black;
+    }
+  }
+
+}

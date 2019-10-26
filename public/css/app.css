@@ -1239,3 +1239,85 @@ body {
   padding: 10px;
 }
 
+.contactIndex {
+  width: 20%;
+  margin: 50px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+}
+
+.contactIndex a {
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.contactIndex a:link {
+  color: gray;
+}
+
+.contactIndex a:visited {
+  color: gray;
+}
+
+.contactIndex a:hover {
+  border-bottom: 1px solid black;
+}
+
+.contactCreate {
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.contactCreate__form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+  text-align: center;
+}
+
+.contactCreate__form__input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid gray;
+}
+
+.contactCreate__form__input:focus {
+  border: 1px solid red;
+}
+
+.contactCreate__form__submit {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  margin: 10px auto;
+  width: 30%;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 10px;
+}
+
