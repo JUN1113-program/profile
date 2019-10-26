@@ -8,4 +8,9 @@ use App\Profile;
 
 class ProfileController extends Controller
 {
+    public function index(){
+        $profile = Profile::find(1);
+
+        return view("profile/index", compact("profile"));
+    }
 }
