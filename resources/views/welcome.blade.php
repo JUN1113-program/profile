@@ -23,8 +23,8 @@
     <a href="/blog" class="top__item">
         BLOG
     </a>
-    <a href="/mail" class="top__item">
-        MAIL
+    <a href="/contact" class="top__item">
+        CONTACT
     </a>
 </div>
 
