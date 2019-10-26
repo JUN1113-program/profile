@@ -1,0 +1,28 @@
+.contactCreate{
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid black;
+  &__form{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    &__input{
+      @include reset_form;
+      width: 60%;
+      margin: 10px auto;
+      border: 1px solid gray;
+      &:focus{
+        border: 1px solid red;
+      }
+    }
+    &__submit{
+      @include reset_form;
+      margin: 10px auto;
+      width: 30%;
+      border: 1px solid black;
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+}
