@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::resource('portfolio', 'PortfolioController');
 Route::resource('profile', 'ProfileController');
+Route::resource('blog', 'BlogController');

@@ -1,0 +1,15 @@
+.blogs{
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  &__blog{
+    margin-top: 20px;
+    & a{
+      @include reset_a-tag(black);
+      font-size: 20px;
+      &:hover{
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

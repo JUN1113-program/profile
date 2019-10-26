@@ -48,4 +48,8 @@ class User extends Authenticatable
     public function icon(){
         return $this->hasOne("App\Icon");
     }
+
+    public function blogs(){
+        return $this->hasMany("App\Blog");
+    }
 }
