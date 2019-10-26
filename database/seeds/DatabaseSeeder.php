@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PortfolioTableSeeder::class);
         $this->call(ProfileTableSeeder::class);
         $this->call(PortfolioImageTableSeeder::class);
+        $this->call(IconTableSeeder::class);
     }
 }
