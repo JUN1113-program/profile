@@ -13,4 +13,7 @@ class Blog extends Model
         return $parser->parse($this->content);
     }
 
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }
