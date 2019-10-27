@@ -1,0 +1,7 @@
+#app{
+  button{
+    &:focus{
+      outline: none;
+    }
+  }
+}
