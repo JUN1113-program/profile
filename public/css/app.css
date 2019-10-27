@@ -12428,3 +12428,7 @@ body {
   padding: 10px;
 }
 
+#app button:focus {
+  outline: none;
+}
+
