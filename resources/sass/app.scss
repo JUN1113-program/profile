@@ -1,6 +1,16 @@
-//reset.cssやmixinを読み込む
+//reset用CSSの読み込み
 @import "config/reset";
+
+//フォントの読み込み
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// ブートストラップの読み込み
+@import '~bootstrap/scss/bootstrap';
+
+// githubのMDのCSS
 @import "config/github";
+
+//mixin
 @import "mixin/favSetting";
 @import "mixin/fix";
 @import "mixin/responsive";
@@ -12,3 +22,4 @@
 @import "blog/show";
 @import "contact/index";
 @import "contact/create";
+@import 'variables';
