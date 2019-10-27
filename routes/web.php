@@ -19,3 +19,6 @@ Route::resource('portfolio', 'PortfolioController');
 Route::resource('profile', 'ProfileController');
 Route::resource('blog', 'BlogController');
 Route::resource("contact", "ContactController")->only(["index", "store", "create"]);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
