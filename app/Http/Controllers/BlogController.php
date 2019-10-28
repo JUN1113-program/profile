@@ -21,6 +21,15 @@ class BlogController extends Controller
         return view("blog/create",compact("blog", "submit", "action"));
     }
 
+    public function store(Request $request){
+        $blog = [   "content" => $request->content,
+                    "title" => $request->title,
+                    "user_id" => Auth::user()->id];
+        Blog::create($blog);
+
+        return redirect("/home");
+    }
+
     public function show($id){
         $blog = Blog::find($id);
 
