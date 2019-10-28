@@ -30,6 +30,13 @@ class BlogController extends Controller
         return redirect("/home");
     }
 
+    public function edit($id){
+        $blog = Blog::find($id);
+        $submit = "更新する";
+        $action = "/blog/{$id}";
+        return view("blog/create", compact("blog", "submit", "action"));
+    }
+
     public function show($id){
         $blog = Blog::find($id);
 
