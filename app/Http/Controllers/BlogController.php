@@ -14,6 +14,13 @@ class BlogController extends Controller
         return view("blog/index", compact("blogs"));
     }
 
+    public function create(){
+        $blog = new Blog();
+        $submit = "新規登録";
+        $action = "/blog";
+        return view("blog/create",compact("blog", "submit", "action"));
+    }
+
     public function show($id){
         $blog = Blog::find($id);
 
