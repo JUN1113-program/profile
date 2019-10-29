@@ -13,7 +13,20 @@
         <a href = "{{$portfolio->url}}" target="_blank"> アプリケーション</a>
         <a href = "{{$portfolio->src}}" target="_blank"> ソースコード</a>
         <p class="portfolios__content__top">Image</p>
-        <img class="portfolios__content__image" src="{{$portfolio->images->first()->image}}">
+        <img class="portfolios__content__image" src={{$portfolio->image->image}}>
+    </div>
+    <div class="text-right m-3">
+        <form action="/portfolio/{{$portfolio->id}}/edit" method="get">
+            {{ csrf_field() }}
+            <input class="btn btn-outline-primary" type="submit" value="編集する">
+        </form>
+    </div>
+    <div class="text-right m-3">
+        <form action="/portfolio/{{$portfolio->id}}" method="post">
+            {{ csrf_field() }}
+            {{ method_field('delete') }}
+            <input class="btn btn-outline-primary" type="submit" value="削除する">
+        </form>
     </div>
 </div>
 
