@@ -9,4 +9,6 @@ class PortfolioImage extends Model
     public function portfolio(){
         return $this->belongsTo('App\Portfolio');
     }
+
+    protected $fillable = ['image', "portfolio_id"];
 }

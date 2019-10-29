@@ -17,7 +17,7 @@ class CreateIconTable extends Migration
             $table->bigIncrements('id');
             $table->string("image", 190)->nullable(false);
             $table->bigInteger('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

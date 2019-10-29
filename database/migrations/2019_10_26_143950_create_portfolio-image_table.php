@@ -17,7 +17,7 @@ class CreatePortfolioImageTable extends Migration
             $table->bigIncrements('id');
             $table->string("image", 180)->nullable(false);
             $table->bigInteger('portfolio_id')->unsigned();
-            $table->foreign('portfolio_id')->references('id')->on('portfolios');
+            $table->foreign('portfolio_id')->references('id')->on('portfolios')->onDelete('cascade');
             $table->timestamps();
         });
     }
