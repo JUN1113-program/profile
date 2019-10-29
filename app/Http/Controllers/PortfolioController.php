@@ -42,4 +42,17 @@ class PortfolioController extends Controller
         return view("portfolio/create", compact("portfolio", "submit", "action"));
     }
 
+    public function update(Request $request, $id){
+        $inputData = [  "title" => $request->title,
+                        "explanation" => $request->explanation,
+                        "env" => $request->env,
+                        "url" => $request->url,
+                        "src" => $request->src,
+                        "user_id" => Auth::user()->id];
+        $portfolio = Portfolio::find($id);
+        $portfolio->update($inputData);
+        $portfolio->image()->update(["image" => $request->image]);
+        return redirect("/home");
+    }
+
 }
