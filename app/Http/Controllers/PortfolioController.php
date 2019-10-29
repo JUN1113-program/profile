@@ -55,4 +55,10 @@ class PortfolioController extends Controller
         return redirect("/home");
     }
 
+    public function destroy($id){
+        Portfolio::destroy($id);
+
+
+        return redirect("/home");
+    }
 }
