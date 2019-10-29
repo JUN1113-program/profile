@@ -22,4 +22,17 @@ class PortfolioController extends Controller
         return view("portfolio/create",compact("portfolio", "submit", "action"));
     }
 
+    public function store(Request $request){
+        $inputData = [  "title" => $request->title,
+                        "explanation" => $request->explanation,
+                        "env" => $request->env,
+                        "url" => $request->url,
+                        "src" => $request->src,
+                        "user_id" => Auth::user()->id];
+        $portfolio = Portfolio::create($inputData);
+        $portfolio->image()->create(["image" => $request->image]);
+
+        return redirect("/home");
+    }
+
 }
