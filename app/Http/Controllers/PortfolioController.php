@@ -35,4 +35,11 @@ class PortfolioController extends Controller
         return redirect("/home");
     }
 
+    public function edit($id){
+        $portfolio = Portfolio::find($id);
+        $submit = "更新する";
+        $action = "/portfolio/{$id}";
+        return view("portfolio/create", compact("portfolio", "submit", "action"));
+    }
+
 }
