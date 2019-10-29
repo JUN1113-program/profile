@@ -10,7 +10,9 @@ class Portfolio extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function images(){
-        return $this->hasMany("App\PortfolioImage");
+    public function image(){
+        return $this->hasOne("App\PortfolioImage");
     }
+
+    protected $fillable = ['title', 'explanation',"env", "url", "src", "user_id"];
 }
