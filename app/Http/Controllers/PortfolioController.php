@@ -57,8 +57,6 @@ class PortfolioController extends Controller
 
     public function destroy($id){
         Portfolio::destroy($id);
-
-
         return redirect("/home");
     }
 }
