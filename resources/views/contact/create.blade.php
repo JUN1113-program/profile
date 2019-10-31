@@ -6,7 +6,7 @@
             {{ csrf_field() }}
             <div class="form-group">
                     <label for="contactEmail">返信用アドレス</label>
-                    <input class="form-control" type="email" name="email" id="contactEmail">
+                    <input class="form-control" type="email" name="email" id="contactEmail" required autofocus>
                 </div>
             <div class="form-group">
                 <label for="contactContent">お問い合わせ内容</label>
