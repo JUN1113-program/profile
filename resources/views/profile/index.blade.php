@@ -19,4 +19,17 @@
         <img class="icon" src="{{$profile->user->icon->image}}">
     </div>
 </div>
+<div class="text-right m-3">
+    <form action="/profile/{{$profile->id}}/edit" method="get">
+        {{ csrf_field() }}
+        <input class="btn btn-outline-primary" type="submit" value="編集する">
+    </form>
+</div>
+<div class="text-right m-3">
+    <form action="/profile/{{$profile->id}}" method="post">
+        {{ csrf_field() }}
+        {{ method_field('delete') }}
+        <input class="btn btn-outline-primary" type="submit" value="削除する">
+    </form>
+</div>
 @endsection
