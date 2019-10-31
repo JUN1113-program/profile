@@ -21,7 +21,13 @@
                 <div class="card">
                     <div class="card-header">
                         Contact from {{$contact->email}}
-                        <button class="close" type="button" onclick="location.href=''">&times;</button>
+                        <div class="float-md-right">
+                            <form action="/contact/{{$contact->id}}" method="post">
+                                {{ csrf_field() }}
+                                {{ method_field('delete') }}
+                                <button class="close" type="submit">&times;</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="card-body">
                         {{$contact->content}}
