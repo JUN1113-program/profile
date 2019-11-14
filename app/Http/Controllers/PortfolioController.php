@@ -9,6 +9,11 @@ use App\Portfolio;
 
 class PortfolioController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(["index"]);
+    }
+
     public function index(){
         $portfolios = Portfolio::all();
 
